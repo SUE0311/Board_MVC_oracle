@@ -1,0 +1,42 @@
+@CHARSET "EUC-KR";
+
+.boardlist_title{
+	width:200px;
+	margin:20px auto;
+}
+
+#boardTable
+{
+	width:680px;
+	margin:0 auto;
+	border-collapse:collapse;
+	background:#fff;
+}
+
+#boardTable th, td{
+	border: 1px solid black;
+	padding:2px;
+}
+
+#boardTable th{
+	background:#ebebeb;
+}
+
+#boardTable td{
+	padding:0 5px;
+}
+
+.btnArea{
+	width:270px;
+	margin:20px auto;
+}
+
+.btnArea input{
+	cursor:hand; cursor:pointer;
+	padding:2px 20px;
+}
+
+#list_btn{
+	width:100px;
+	margin:20px auto;
+}

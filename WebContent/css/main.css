@@ -1,0 +1,148 @@
+@CHARSET "UTF-8";
+#main_wrap{
+	width:1024px; /*폭 지정*/
+	height:810px; /*높이 */
+	margin-left:auto; margin-right:auto; /* div 중앙정렬*/
+	margin-top:30px; /*바깥 상단 여백 지정 */
+	border:1px solid blue; /* 테두리 실선 하늘색으로 그린다.*/
+	border-radius:20px; /*css3 에 새롭게 추가된 명령어로 테두리를 둥글게 */
+}
+
+#header{
+	width:1004px; height:150px; 
+	margin:10px 0 0 10px; /*시계방향으로 위,오른쪽,아래쪽,왼쪽, 바깥 여백 설정 */
+	border:1px solid red;
+	border-radius:15px;
+}
+
+#logo{
+	width:240px; height:130px;
+	margin:10px 0 0 10px;
+	border:1px solid blue;
+	border-radius:10px;
+	float:left; /*div 안의  div를 수직정렬에서 수평정렬로 바꾼다. 아주중요*/
+}
+#top_menu{
+	width:500px; height:130px;
+	margin:10px 0 0 10px;
+	border:1px solid blue;
+	border-radius:10px;
+	float:left;
+	background-size: cover;
+}
+
+#top_login{
+    width:220px; height:130px;
+    margin:10px 0 0 10px;
+    border:1px solid blue; border-radius:10px;
+    float:left;	
+}
+
+.clear{
+	clear:both;
+	/*div 영역간 간섭을 없앰 */
+}
+
+#article{
+	width:1004px; height:550px; 
+	margin-left:auto; margin-right:auto;
+	margin-top:10px;
+	border:1px solid red;
+	border-radius:15px;
+}
+.article_cont{  /* 메인 내용 */
+	margin:30px 0 0 30px;
+	font-size:16pt;
+}
+#left_menu{
+	width:240px; height:530px;
+	margin:10px 0 0 10px;
+	border:1px solid blue; 
+	border-radius:10px;
+	float:left;
+}
+
+#article_c{
+    width:730px; height:490px;
+    margin:10px 0 0 10px;
+    padding:40px 0 0 0;
+    border:1px solid blue; border-radius:10px;
+    float:left;	
+    background-image:url('../images/skyblue.jpg');
+}
+
+#footer{
+	width:1004px; height:60px;
+	margin-left:auto; margin-right:auto;
+	margin-top:10px; 
+	border:1px solid red; border-radius:15px;
+}
+
+#logo img{
+  margin:15px 0 0 30px;	
+}
+
+
+#top_menu ul li{
+	list-style:none; /*목록앞 점 없애기 */
+    float:left; /*목록 수직정렬을 수평정렬로 */
+    margin:80px 0 0 15px;
+    padding:0 50px 0 0;/*안여백을 설정 
+    시계방향으로 위,오른쪽,아래쪽,왼쪽*/
+}
+
+a:link{text-decoration:none; }/*하이퍼링크 된곳 밑줄없앰 */
+a:hover{
+	text-decoration:underline; /*하이퍼링크 된곳 마우스 오버시
+	밑줄 나오게 함*/
+}
+a:active{
+	text-decoartion:none;/*하이퍼링크 된곳 클릭하는 순간 밑줄 없애기 */
+}
+a:visited{
+	text-decoration:none;/*하이퍼링크 된곳 한번이라도 방문 한곳 밑줄
+	없애기*/
+}
+
+#top_login ul li{
+	 list-style:none;
+	 font-size:9pt; /*글자 크기 조절 */
+	 float:left;
+	 padding:0 10px 0 0;
+	 margin:0 0 0 10px;
+}
+
+#login_t{
+	margin:40px 0 0 20px;
+}
+
+#login_t th{
+	font-size:13px;
+	background:#99CCFF; 
+	/* border-radius:10px; */
+}
+.input_box{
+	/* border-radius:10px;  */
+	padding:2px;
+	/* border:1px solid blue; */
+}
+
+.input_box:hover{ /* 마우스 오버  시 이벤트 발생*/
+	background:#CCFF66; /* 배경색 */
+}
+#login_menu{
+	margin:14px 0 0 40px;	
+}
+.input_b:hover{
+	cursor:hand; cursor:pointer; /* 마우스 오버시 손가락 모양 */
+	/* border:1px solid red;
+	border-radius:10ox; padding:2px; 상하좌우 안 여백 설정
+	font-weight:bold; 글자를 진하게 */
+}
+#footer .footer_title{
+	padding-top:10px;
+	text-align:center;
+	font-size:12px;
+}
+
+

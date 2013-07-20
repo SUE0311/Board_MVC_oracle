@@ -1,0 +1,38 @@
+<개요>
+1. 어플리케이션 명 : Board_MVC_oracle.
+2. 작성자 : 이지수
+3. 작성일 : 2013.07.21
+
+<소개>
+이것은 모델 2 기반의 MVC 패턴으로 프로그래밍한 웹 어플리케이션입니다.
+구현한 내용은 기초적인 <게시판 만들기>로 목록 보기, 내용 보기, 글 수정, 글 삭제 기능이 있습니다. 
+JDBC와 연동하기 위해서 Connection pool(커넥션 풀)을 사용하였습니다. 
+참고 : 학원 수업 내용 + 교재(모델2로 구현하는 자바 웹 프로그램밍JSP2.2 & Servlet3.0(오정원 지음/혜지원))
+
+<보충 자료>
+MVC 패턴을 이해하기 위해서 User가 게시판을 이용하는 과정에 따라 프로그래밍 시나리오를 작성해보았습니다.
+Model, View, Controller의 역할이 어떻게 나뉘어 지고 구현해야 할 중요 기능이 무엇인지 이해하는데
+조금이나마 도움이 되길 바랍니다. [파일명 : readme(storyProgramming)] 
+
+<작업 환경>
+Eclipse IDE - Dynamic Web project
+Oracle 11g
+Tomcat 7.0
+jsp
+
+<테스트 순서 및 방법>
+
+1. 이클립스에 프로젝트를 import 하십시오.
+- jstl.jar, ojdbc6.jar, standard.jar 파일이 lib 폴더에 포함되어 있습니다. 
+
+2. connection pool이 작동하는지 connect 여부를 확인하십시오.
+- META-INF 폴더에 context.xml 파일에서 설정 값을 확인해주십시오.
+- test 폴더에 dbcpTest.jsp를 run하셔서 연결이 되었다고 출력되면 성공입니다.
+
+3. sql 폴더에 있는 board.sql로 board02 테이블을 만드십시오. 
+- column은 `board02_no`, `board02_name`, `board02_title`, `board02_cont`
+  `board02_pwd`, `board02_hit`, `board02_regdate`입니다.
+
+4. 메인 test는  WebContent 폴더에 'index.jsp'를 run하시면 됩니다.
+- 메인 페이지의 상담 메뉴 중 '게시판' 기능망 구현되어있습니다.
+- 제목을 클릭하시면 내용보기 창으로 넘어가고, 그 외 수정, 삭제 등의 기능을 테스트해보실 수 있습니다.
